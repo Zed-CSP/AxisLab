@@ -1,0 +1,76 @@
+@import "tailwindcss";
+@plugin "tailwind-scrollbar";
+
+:root {
+  /* Light theme colors */
+  --background-light: #FFF8F3;
+  --foreground-light: #f97316;
+  --brand-light: #f97316;
+  --highlight-light: #fb923c;
+  --secondary-light: #FFFBF8;
+  --tertiary-light: #FFF1E7;
+  
+  /* Dark theme colors */
+  --background-dark: #0a0a0a;
+  --foreground-dark: #ededed;
+  --brand-dark: #f97316;
+  --highlight-dark: #fb923c;
+  --secondary-dark: #1a1a1a;
+  --tertiary-dark: #2a2a2a;
+  
+  /* Default to light theme */
+  --background: var(--background-light);
+  --foreground: var(--foreground-light);
+  --brand: var(--brand-light);
+  --highlight: var(--highlight-light);
+  --secondary: var(--secondary-light);
+  --tertiary: var(--tertiary-light);
+  
+  /* Viewer-specific tokens used by JS and CSS */
+  --mujoco-scene-bg: var(--background);
+}
+
+@theme inline {
+  /* Tailwind color tokens consumed via bg-*, text-*, etc. */
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-brand: var(--brand);
+  --color-highlight: var(--highlight);
+  --color-secondary: var(--secondary);
+  --color-tertiary: var(--tertiary);
+  
+  /* Fonts */
+  --font-mono: var(--font-dm-mono, ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace);
+  --font-sans: var(--font-mono);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: var(--background-dark);
+    --foreground: var(--foreground-dark);
+    --brand: var(--brand-dark);
+    --highlight: var(--highlight-dark);
+    --secondary: var(--secondary-dark);
+    --tertiary: var(--tertiary-dark);
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans);
+  min-height: 100vh;
+}
+
+/* Position Stats panel in the top-right corner of the header */
+div[style*="position: fixed"][style*="top: 0px"][style*="left: 0px"] {
+  position: fixed !important;
+  top: 8px !important; /* Adjusted for vertical centering in the header (16px height) */
+  right: 16px !important;
+  left: auto !important;
+  z-index: 15 !important;
+  height: 48px !important; /* Match header height */
+  display: flex !important;
+  align-items: center !important;
+  cursor: pointer !important;
+}

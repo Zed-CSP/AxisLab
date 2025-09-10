@@ -1,0 +1,42 @@
+[
+  {
+    "display_name": "Cassie",
+    "owner": "placeholder",
+    "repo_name": "cassie",
+    "fileType": "URDF",
+    "path": "/urdf/cassie/cassie.urdf",
+    "imagePath": "/urdf/cassie/cassie.png"
+  },
+  {
+    "display_name": "SO-100",
+    "owner": "placeholder",
+    "repo_name": "so-100",
+    "fileType": "URDF",
+    "path": "/urdf/so-100/so_100.urdf",
+    "imagePath": "/urdf/so-100/so_100.png"
+  },
+  {
+    "display_name": "Anymal B",
+    "owner": "placeholder",
+    "repo_name": "anymal-b",
+    "fileType": "URDF",
+    "path": "/urdf/anymal-b/anymal.urdf",
+    "imagePath": "/urdf/anymal-b/anymal.png"
+  },
+  {
+    "display_name": "Humanoid",
+    "owner": "placeholder",
+    "repo_name": "humanoid",
+    "fileType": "MJCF",
+    "path": "/mjcf/humanoid/humanoid.xml",
+    "imagePath": "/mjcf/humanoid/humanoid.png"
+  },
+  {
+    "display_name": "Cassie Metal",
+    "owner": "placeholder",
+    "repo_name": "cassie-metal",
+    "fileType": "MJCF",
+    "path": "/mjcf/cassie/cassie.xml",
+    "imagePath": "/mjcf/cassie/cassie.png"
+  }
+]
