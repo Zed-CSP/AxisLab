@@ -54,5 +54,21 @@
     "fileType": "MJCF",
     "path": "/mjcf/cassie/cassie.xml",
     "imagePath": "/mjcf/cassie/cassie.png"
+  },
+  {
+    "display_name": "Unitree H1",
+    "owner": "unitree",
+    "repo_name": "unitree-h1",
+    "fileType": "MJCF",
+    "path": "/mjcf/unitree-h1/scene.xml",
+    "imagePath": "/mjcf/unitree-h1/h1.png"
+  },
+  {
+    "display_name": "Disney BD Robot (URDF)",
+    "owner": "disney",
+    "repo_name": "go-bdx-urdf",
+    "fileType": "URDF",
+    "path": "/urdf/go-bdx/go_bdx.urdf",
+    "imagePath": "/urdf/go-bdx/go_bdx.png"
   }
 ]

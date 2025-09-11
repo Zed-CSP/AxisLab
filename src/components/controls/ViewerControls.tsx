@@ -49,12 +49,6 @@ export default function ViewerControls({ onUploadClick }: ViewerControlsProps) {
           >
             MJCF
           </button>
-          <button 
-            className={`px-3 py-1.5 text-sm ${selectedType === "USD" ? "bg-brand text-background" : "bg-secondary text-foreground hover:bg-brand/10"}`}
-            onClick={() => setSelectedType("USD")}
-          >
-            USD
-          </button>
         </div>
         
         {onUploadClick && (
@@ -68,7 +62,7 @@ export default function ViewerControls({ onUploadClick }: ViewerControlsProps) {
       </div>
       
       {/* Robot grid */}
-      <div className="flex-1 overflow-y-auto p-4">
+      <div className="flex-1 overflow-y-auto p-4 custom-scrollbar">
         {isLoading && (
           <div className="flex items-center justify-center h-32 text-foreground/50">
             Loading robots...

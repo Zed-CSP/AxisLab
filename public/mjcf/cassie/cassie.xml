@@ -51,7 +51,7 @@
     <mesh name="right-plantar-rod"  scale="1 1 -1" file="plantar-rod.obj"/>
     <mesh name="right-foot"         scale="1 1 -1" file="foot.obj"/>
     <texture type="skybox" builtin="gradient" rgb1=".3 .5 .7" rgb2="0 0 0" width="32" height="512"/>
-    <texture name="grid" type="2d" builtin="checker" width="512" height="512" rgb1="0.9882 0.9659 0.8666" rgb2="0.9882 0.9659 0.8666"/>
+    <texture name="grid" type="2d" builtin="checker" width="512" height="512" rgb1="0.8 0.8 0.8" rgb2="0.9 0.9 0.9"/>
     <material name="grid" texture="grid" texrepeat="1 1" texuniform="true" reflectance=".2"/>
   </asset>
 

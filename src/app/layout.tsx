@@ -12,12 +12,17 @@ const dmMono = DM_Mono({
 export const metadata: Metadata = {
   title: "AxisLab",
   description: "Upload and view your MJCF, URDF, and USD robots and environments in a 3D environment.",
+  icons: {
+    icon: "/images/axisforge-logo.png",
+    apple: "/images/axisforge-logo.png",
+  },
   openGraph: {
     title: "AxisLab",
     description: "Upload and view your MJCF, URDF, and USD robots and environments in a 3D environment.",
     siteName: "AxisLab",
     locale: "en_US",
     type: "website",
+    images: [{ url: "/images/axisforge-logo.png", width: 420, height: 420 }],
   },
 };
 

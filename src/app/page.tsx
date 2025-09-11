@@ -24,9 +24,15 @@ export default function Home() {
           <StatsOverlay />
           
           <div className="w-full h-screen flex flex-col">
-            {/* Navbar will go here */}
+            {/* Navbar with logo */}
             <header className="h-16 bg-secondary border-b border-brand/20 flex items-center px-6">
-              <h1 className="text-2xl font-medium text-brand">AxisLab</h1>
+              <div className="flex items-center gap-3">
+                <img src="/images/axisforge-logo.png" alt="AxisLab Logo" className="h-8 w-8" />
+                <div className="flex items-center gap-2">
+                  <span className="text-2xl font-medium text-white">AxisForge</span>
+                  <h1 className="text-2xl font-medium text-brand">AxisLab</h1>
+                </div>
+              </div>
             </header>
             
             {/* Main content area */}
@@ -43,6 +49,11 @@ export default function Home() {
                 </div>
               </div>
             </main>
+            
+            {/* Footer */}
+            <footer className="h-12 bg-secondary border-t border-brand/20 flex items-center justify-center">
+              <p className="text-sm text-foreground/60">© Christopher Peret 2025</p>
+            </footer>
             
             {/* Full Screen Drag Drop Overlay */}
             {showFullScreenDragDrop && (

@@ -28,10 +28,16 @@ export const ExampleRobotsProvider: React.FC<{ children: React.ReactNode }> = ({
   const [error, setError] = useState<string | null>(null);
 
   const load = useCallback(async () => {
+    // Skip if already loaded and not forcing refresh
+    if (examples && examples.length > 0) return;
+    
     setIsLoading(true);
     setError(null);
     try {
-      const res = await fetch("/example_robots.json", { cache: "no-store" });
+      // Use default caching to avoid unnecessary refetches
+      const res = await fetch("/example_robots.json", { 
+        cache: "force-cache" // Cache the robots list
+      });
       if (!res.ok)
         throw new Error(`Failed to fetch example robots: ${res.status}`);
       const data = (await res.json()) as ExampleRobot[];
@@ -42,7 +48,7 @@ export const ExampleRobotsProvider: React.FC<{ children: React.ReactNode }> = ({
     } finally {
       setIsLoading(false);
     }
-  }, []);
+  }, [examples]);
 
   useEffect(() => {
     // Fetch once on mount
