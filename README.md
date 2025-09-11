@@ -117,6 +117,16 @@ The application is configured for deployment on [Render](https://render.com). Th
 
 Contributions are welcome! Please feel free to submit a Pull Request.
 
+## Future Updates
+
+Planned enhancements for AxisForge AxisLab include:
+
+- **Policy Demonstrations**: Interactive demos of robot control policies
+- **Learning Algorithms Visualization**: Visual representation of reinforcement learning algorithms
+- **Real-time Policy Training**: Train and test robot policies directly in the browser
+- **Policy Transfer**: Export trained policies for use in real robots
+- **Collaborative Workspace**: Share and collaborate on robot models and policies
+
 ## License
 
 This project is proprietary software.
