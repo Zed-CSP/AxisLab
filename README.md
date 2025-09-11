@@ -1,8 +1,8 @@
-# AxisForge AxisLab
-
 <p align="center">
-  <img src="public/images/AF_Logo.png" alt="AxisForge AxisLab" width="200">
+  <img src="public/images/AF_Logo.png" alt="AxisForge AxisLab" width="800">
 </p>
+
+# AxisForge AxisLab
 
 **Live Demo**: [https://axislab.onrender.com/](https://axislab.onrender.com/)
 
