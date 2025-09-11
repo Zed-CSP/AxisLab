@@ -1,36 +1,132 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# AxisForge AxisLab
+
+![AxisForge AxisLab](public/images/axisforge-logo.png)
+
+## Overview
+
+AxisForge AxisLab is a modern web application for viewing, simulating, and interacting with robotic models. Built with Next.js and Three.js, it provides a powerful platform for robotics visualization and simulation, supporting both URDF (Unified Robot Description Format) and MJCF (MuJoCo XML Format) models.
+
+## Features
+
+- **Multi-format Robot Viewer**: View and interact with robots in URDF and MJCF formats
+- **Interactive 3D Visualization**: Manipulate and explore robot models in 3D space
+- **Physics Simulation**: Run physics simulations on MJCF models using MuJoCo
+- **Robot Library**: Browse a curated collection of robot models
+- **Drag & Drop Support**: Upload your own robot models for viewing
+- **Responsive Design**: Works on desktop and mobile devices
+- **Performance Optimized**: Lazy loading and code splitting for fast loading times
+
+## Supported Robot Models
+
+The application comes pre-loaded with several robot models:
+
+- **URDF Models**:
+  - Anymal B (default)
+  - Atlas v4
+  - Cassie
+  - Dexhand Right
+  - Disney BD Robot
+  - SO-100
+
+- **MJCF Models**:
+  - Cassie Metal
+  - Humanoid
+  - Unitree H1
+
+## Technology Stack
+
+- **Frontend**: Next.js 15, React 19, TypeScript
+- **3D Rendering**: Three.js, @react-three/fiber, @react-three/drei
+- **Physics Engine**: MuJoCo (via WebAssembly)
+- **Styling**: Tailwind CSS, CSS Variables
+- **Deployment**: Render
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
+
+- Node.js 18.x or later
+- npm or yarn
+
+### Installation
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/Zed-CSP/AxisLab.git
+   cd axislab
+   ```
+
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
+
+3. Run the development server:
+   ```bash
+   npm run dev
+   ```
+
+4. Open [http://localhost:3000](http://localhost:3000) in your browser to see the application.
+
+### Building for Production
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+npm run build
+npm start
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Deployment
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+The application is configured for deployment on [Render](https://render.com). The `render.yaml` file provides the blueprint for deployment.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Usage
 
-## Learn More
+### Viewing Robot Models
 
-To learn more about Next.js, take a look at the following resources:
+1. Select a robot from the Robot Library panel
+2. Use mouse controls to navigate:
+   - **Left-click + drag**: Rotate the view
+   - **Right-click + drag**: Pan the view
+   - **Scroll**: Zoom in/out
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Simulating MJCF Models
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+1. Select an MJCF model from the Robot Library
+2. Click the "Simulate" button to start the physics simulation
+3. Observe the model's behavior under simulated physics
 
-## Deploy on Vercel
+### Uploading Custom Models
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+1. Drag and drop your URDF or MJCF files onto the viewer
+2. The application will automatically load and display your model
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Project Structure
+
+- `public/` - Static assets and robot models
+  - `urdf/` - URDF model files and meshes
+  - `mjcf/` - MJCF model files and meshes
+  - `images/` - Application images and icons
+- `src/` - Application source code
+  - `app/` - Next.js app router components
+  - `components/` - React components
+  - `contexts/` - React context providers
+  - `hooks/` - Custom React hooks
+  - `types/` - TypeScript type definitions
+
+## Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request.
+
+## License
+
+This project is proprietary software.
+
+## Acknowledgements
+
+- Robot models sourced from various open-source repositories
+- MuJoCo physics engine for simulation capabilities
+- Three.js and React Three Fiber for 3D rendering
+
+---
+
+© Christopher Peret 2025 - AxisForge
