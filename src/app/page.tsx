@@ -9,9 +9,15 @@ import { UrdfRuntimeProvider } from "@/contexts/UrdfRuntimeContext";
 
 // Components
 import ViewerControls from "@/components/controls/ViewerControls";
-import ViewerSwitch from "@/components/viewer/ViewerSwitch";
+import dynamic from "next/dynamic";
 import FullScreenDragDrop from "@/components/FullScreenDragDrop";
 import StatsOverlay from "@/components/StatsOverlay";
+
+// Use dynamic import with no SSR for ViewerSwitch
+const ViewerSwitch = dynamic(
+  () => import("@/components/viewer/ViewerSwitch"),
+  { ssr: false, loading: () => <div className="w-full h-full flex items-center justify-center"><div className="animate-spin h-10 w-10 border-4 border-brand border-t-transparent rounded-full"></div></div> }
+);
 
 export default function Home() {
   const [showFullScreenDragDrop, setShowFullScreenDragDrop] = useState(false);
