@@ -6,7 +6,7 @@
 
 <p align="center">
   <a href="https://axislab.onrender.com/" target="_blank">
-    <img src="https://img.shields.io/badge/LIVE_DEMO-Visit_Site-4285F4?style=for-the-badge&logo=render&logoColor=white" alt="Live Demo" width="300" height="60"/>
+    <img src="https://img.shields.io/badge/LIVE_DEMO-Visit_Site-4285F4?style=for-the-badge&logo=render&logoColor=white" alt="Live Demo" width="600" height="120"/>
   </a>
 </p>
 
