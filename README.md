@@ -10,6 +10,12 @@
   </a>
 </p>
 
+<div align="center">
+  <strong>⚠️ System Requirements ⚠️</strong><br>
+  For optimal performance, a desktop or laptop with a dedicated GPU, 8GB+ RAM, and a stable high-speed internet connection is recommended.<br>
+  Mobile devices and low-spec computers may experience reduced performance during physics simulations.
+</div>
+
 ## Table of Contents
 - [Overview](#overview)
 - [Features](#features)
