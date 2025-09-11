@@ -2,7 +2,7 @@ services:
   - type: web
     name: axislab
     runtime: node
-    buildCommand: npm ci --production=false && NODE_OPTIONS="--max-old-space-size=4096" npm run build
+    buildCommand: npm install && NODE_OPTIONS="--max-old-space-size=4096" npm run build
     startCommand: npm run start
     envVars:
       - key: NODE_ENV
