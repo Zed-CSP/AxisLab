@@ -47,6 +47,28 @@ The application comes pre-loaded with several robot models:
 - **Styling**: Tailwind CSS, CSS Variables
 - **Deployment**: Render
 
+### MuJoCo WebAssembly Integration
+
+AxisLab leverages the MuJoCo physics engine compiled to WebAssembly (WASM), enabling complex physics simulations directly in the browser without requiring any native installations. This integration offers several key advantages:
+
+- **Cross-platform compatibility**: Run sophisticated robot simulations on any device with a modern browser
+- **No installation required**: Users can immediately interact with physics-based simulations without downloading additional software
+- **Consistent performance**: The WASM compilation ensures consistent behavior across different operating systems
+- **Reduced latency**: Physics calculations run locally in the browser, eliminating server round-trips for simulation
+- **Secure sandboxed execution**: WASM provides a secure environment for running the physics engine
+
+The implementation uses MuJoCo 2.3.1 compiled with Emscripten and is integrated into our React component architecture through a custom iframe-based approach. This allows for smooth communication between the physics simulation and the main application while maintaining optimal performance.
+
+### Technical Implementation
+
+- The MuJoCo C/C++ codebase is compiled to WebAssembly using Emscripten
+- Communication between the main application and the WASM module is handled through JavaScript bindings
+- An iframe-based architecture isolates the physics simulation from the main rendering thread
+- The `postMessage` API enables efficient data transfer between the simulation and visualization components
+- Three.js is used to render the visual representation of the physics simulation results
+
+This approach allows AxisLab to provide a fully-featured physics simulation environment in the browser that rivals desktop applications in terms of capability and performance, while maintaining the accessibility and convenience of a web application.
+
 ## Getting Started
 
 ### Prerequisites
