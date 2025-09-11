@@ -41,7 +41,11 @@ export const ExampleRobotsProvider: React.FC<{ children: React.ReactNode }> = ({
       if (!res.ok)
         throw new Error(`Failed to fetch example robots: ${res.status}`);
       const data = (await res.json()) as ExampleRobot[];
-      setExamples(data);
+      // Sort robots alphabetically by display_name
+      const sortedData = [...data].sort((a, b) => 
+        a.display_name.localeCompare(b.display_name)
+      );
+      setExamples(sortedData);
     } catch (e) {
       setError((e as Error)?.message || "Unknown error");
       setExamples([]);
