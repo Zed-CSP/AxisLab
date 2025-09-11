@@ -1,7 +1,5 @@
 "use client";
 
-import { useRobot } from "@/hooks/useRobot";
-
 // Simple loading component
 const ViewerLoader = () => (
   <div className="w-full h-full flex flex-col items-center justify-center">
