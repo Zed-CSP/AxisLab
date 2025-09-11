@@ -93,7 +93,7 @@ export default function FullScreenDragDrop({ onClose }: FullScreenDragDropProps)
         },
         setUrlModifierFunc: (modifier: (url: string) => string) => {
           // This will be called by the URDF viewer component
-          console.log("Setting URL modifier function");
+          console.log("Setting URL modifier function", modifier);
         }
       };
       
