@@ -4,7 +4,7 @@ import React, { createContext, useState, ReactNode } from "react";
 import { RobotFileType } from "@/types/robot";
 
 const defaultRobotOwner = "placeholder";
-const defaultRobotName = "cassie";
+const defaultRobotName = "anymal-b";
 
 // Public API available to sub-components
 export type RobotContextType = {
