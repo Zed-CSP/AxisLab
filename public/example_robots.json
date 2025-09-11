@@ -24,6 +24,22 @@
     "imagePath": "/urdf/anymal-b/anymal.png"
   },
   {
+    "display_name": "Dexhand Right",
+    "owner": "placeholder",
+    "repo_name": "dexhand-right",
+    "fileType": "URDF",
+    "path": "/urdf/dexhand/dexhand-right.urdf",
+    "imagePath": "/urdf/dexhand/dexhand-right.png"
+  },
+  {
+    "display_name": "Atlas v4",
+    "owner": "placeholder",
+    "repo_name": "atlas-v4",
+    "fileType": "URDF",
+    "path": "/urdf/atlas-v4/atlas_v4.urdf",
+    "imagePath": "/urdf/atlas-v4/atlas_v4.png"
+  },
+  {
     "display_name": "Humanoid",
     "owner": "placeholder",
     "repo_name": "humanoid",
