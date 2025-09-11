@@ -2,9 +2,13 @@
 
 ![AxisForge AxisLab](public/images/axisforge-logo.png)
 
+**Live Demo**: [https://axislab.onrender.com/](https://axislab.onrender.com/)
+
 ## Overview
 
 AxisForge AxisLab is a modern web application for viewing, simulating, and interacting with robotic models. Built with Next.js and Three.js, it provides a powerful platform for robotics visualization and simulation, supporting both URDF (Unified Robot Description Format) and MJCF (MuJoCo XML Format) models.
+
+![AxisLab Screenshot](Screenshot.png)
 
 ## Features
 
