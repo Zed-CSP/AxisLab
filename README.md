@@ -4,7 +4,11 @@
 
 # AxisForge AxisLab
 
-**Live Demo**: [https://axislab.onrender.com/](https://axislab.onrender.com/)
+<p align="center">
+  <a href="https://axislab.onrender.com/" target="_blank">
+    <img src="https://img.shields.io/badge/LIVE_DEMO-Visit_Site-4285F4?style=for-the-badge&logo=render&logoColor=white" alt="Live Demo" width="300" height="60"/>
+  </a>
+</p>
 
 ## Table of Contents
 - [Overview](#overview)
@@ -176,6 +180,7 @@ Planned enhancements for AxisForge AxisLab include:
 - **Real-time Policy Training**: Train and test robot policies directly in the browser
 - **Policy Transfer**: Export trained policies for use in real robots
 - **Collaborative Workspace**: Share and collaborate on robot models and policies
+- **MuJoCo Version Upgrade**: Update to the latest MuJoCo version (3.0+) for enhanced physics simulation capabilities
 
 ## License
 
