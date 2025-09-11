@@ -52,7 +52,7 @@ export default function Home() {
             
             {/* Footer */}
             <footer className="h-12 bg-secondary border-t border-brand/20 flex items-center justify-center">
-              <p className="text-sm text-foreground/60">© Christopher Peret 2025</p>
+              <p className="text-sm text-foreground/60">© Christopher Peret 2025 - AxisForge</p>
             </footer>
             
             {/* Full Screen Drag Drop Overlay */}
