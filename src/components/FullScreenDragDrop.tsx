@@ -87,7 +87,7 @@ export default function FullScreenDragDrop({ onClose }: FullScreenDragDropProps)
       
       // Register the URL modifier with the URDF processor
       const urdfProcessor = {
-        loadUrdf: (path: string) => {
+        loadUrdf: () => {
           // This will be called by the URDF viewer component
         },
         setUrlModifierFunc: () => {

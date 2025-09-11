@@ -10,6 +10,7 @@ import { UrdfRuntimeProvider } from "@/contexts/UrdfRuntimeContext";
 // Components
 import ViewerControls from "@/components/controls/ViewerControls";
 import dynamic from "next/dynamic";
+import Image from "next/image";
 import FullScreenDragDrop from "@/components/FullScreenDragDrop";
 import StatsOverlay from "@/components/StatsOverlay";
 
@@ -33,7 +34,13 @@ export default function Home() {
             {/* Navbar with logo */}
             <header className="h-16 bg-secondary border-b border-brand/20 flex items-center px-6">
               <div className="flex items-center gap-3">
-                <img src="/images/axisforge-logo.png" alt="AxisLab Logo" className="h-8 w-8" />
+                <Image 
+                  src="/images/axisforge-logo.png" 
+                  alt="AxisLab Logo" 
+                  width={32} 
+                  height={32} 
+                  priority 
+                />
                 <div className="flex items-center gap-2">
                   <span className="text-2xl font-medium text-white">AxisForge</span>
                   <h1 className="text-2xl font-medium text-brand">AxisLab</h1>

@@ -11,7 +11,8 @@ const ViewerLoader = () => (
 );
 
 export default function ViewerSwitchSimple() {
-  const { activeRobotType } = useRobot();
+  // We don't need activeRobotType since this is just a simple loader
+  // const { activeRobotType } = useRobot();
 
   // Always return the loader during server-side rendering
   // The actual components will be loaded client-side

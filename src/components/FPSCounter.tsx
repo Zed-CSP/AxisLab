@@ -23,7 +23,14 @@ export default function FPSCounter() {
         
         // Try to get memory info if available
         if (window.performance && 'memory' in window.performance) {
-          const memoryInfo = (window.performance as any).memory;
+          // Define a type for Chrome's non-standard performance.memory
+          interface MemoryInfo {
+            usedJSHeapSize: number;
+            totalJSHeapSize: number;
+            jsHeapSizeLimit: number;
+          }
+          
+          const memoryInfo = (window.performance as { memory?: MemoryInfo }).memory;
           if (memoryInfo && memoryInfo.usedJSHeapSize) {
             setMemory(Math.round(memoryInfo.usedJSHeapSize / (1024 * 1024)));
           }
