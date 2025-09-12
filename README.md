@@ -205,7 +205,7 @@ Use of these names, logos, or associated branding is not permitted without writt
 - Three.js and React Three Fiber for 3D rendering
 - urdf-loaders Robust URDF loading for Three.js
 - mujoco_wasm MuJoCo physics engine in the browser via WebAssembly
-- jurmy24 & YLewisLu
+- [jurmy24](https://github.com/jurmy24) & [YLewisLu](https://github.com/YLewisLu)
 
 ---
 
