@@ -203,8 +203,8 @@ Use of these names, logos, or associated branding is not permitted without writt
 - Robot models sourced from various open-source repositories
 - MuJoCo physics engine for simulation capabilities
 - Three.js and React Three Fiber for 3D rendering
-- urdf-loaders Robust URDF loading for Three.js
-- mujoco_wasm MuJoCo physics engine in the browser via WebAssembly
+- [urdf-loaders](https://github.com/gkjohnson/urdf-loaders) Robust URDF loading for Three.js
+- [mujoco_wasm](https://github.com/zalo/mujoco_wasm) MuJoCo physics engine in the browser via WebAssembly
 - [jurmy24](https://github.com/jurmy24) & [YLewisLu](https://github.com/YLewisLu)
 
 ---
