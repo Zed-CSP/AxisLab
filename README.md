@@ -190,14 +190,23 @@ Planned enhancements for AxisForge AxisLab include:
 
 ## License
 
-This project is proprietary software.
+This software is released under the MIT License.  
+It includes code inspired by [Mechaverse](https://github.com/MechaverseOrg/Mechaverse), which is also MIT-licensed.
+
+## Trademarks
+
+"AxisLab" and "AxisForge" are proprietary names and trademarks of Christopher Peret.  
+Use of these names, logos, or associated branding is not permitted without written consent.
 
 ## Acknowledgements
 
 - Robot models sourced from various open-source repositories
 - MuJoCo physics engine for simulation capabilities
 - Three.js and React Three Fiber for 3D rendering
+- urdf-loaders Robust URDF loading for Three.js
+- mujoco_wasm MuJoCo physics engine in the browser via WebAssembly
+- jurmy24 & YLewisLu
 
 ---
 
-© Christopher Peret 2025 - AxisForge
+Christopher Peret 2025 - AxisForge
