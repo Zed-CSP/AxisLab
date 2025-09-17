@@ -1,0 +1,5 @@
+# Ignore npm debug logs
+npm-debug.log*
+
+# Ignore npm config
+.npmrc.local
